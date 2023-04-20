@@ -1,3 +1,8 @@
-div{
-    border: 2px solid black;
+/* div{
+    border: 2px solid black
+    margin-bottom:4px;
+} */
+.demo-content {
+    padding:15px;
+    background: #dbdfe5;
 }
