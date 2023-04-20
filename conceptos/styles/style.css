@@ -12,3 +12,11 @@
         background: rgb(190, 161, 161);
         border: solid blue;
     }
+    .main-content{
+        min-height: 230px;
+
+    }
+    .sidebar-content{
+        min-height: 100px;
+        margin-bottom: 30px;
+    }
