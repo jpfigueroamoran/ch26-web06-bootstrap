@@ -3,6 +3,12 @@
     margin-bottom:4px;
 } */
 .demo-content {
-    padding:15px;
+    padding: 15px;
     background: #dbdfe5;
 }
+
+.demo-content{
+    
+        background: rgb(190, 161, 161);
+        border: solid blue;
+    }
