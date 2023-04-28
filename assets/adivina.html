@@ -2,7 +2,6 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
-  <title>Calculadora</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mi portfolio</title>
@@ -15,7 +14,8 @@
   <link rel="stylesheet" href="./styles/main.css" />
 </head>
 
-<body class="bg-dark text-light">
+<body>
+  <!-- navbar -->
   <nav class="navbar navbar-expand-sm bg-success" data-bs-theme="light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -61,49 +61,22 @@
       </div>
     </div>
   </nav>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-sm-6 col">
-        <div class="form-group">
-          <label for="numeroA">Número A:</label>
-          <input type="number" class="form-control" id="numeroA">
-        </div>
-      </div>
-      <div class="col-sm-6 col">
-        <div class="form-group">
-          <label for="numeroB">Número B:</label>
-          <input type="number" class="form-control" id="numeroB">
-        </div>
-      </div>
-    </div>
+  <div class="container">
+		<h1>Adivina el número</h1>
+    <div class="row" id="instrucciones"><img src="./img/instrucciones.png" alt=""></div>
+		<p>En este juego, deberás pensar en un número del 1 al 100. El programa te irá preguntando si el número a adivinar es mayor o menor que el que muestra en pantalla, hasta que adivine tu número.</p>
+		<p>El número a adivinar es:</p>
+		<h2 id="number"></h2>
+		<button id="button" class="btn btn-primary">Comenzar</button>
+		<p id="message"></p>
+	</div>
+  <!-- Importamos el archivo JavaScript que contiene el juego -->
+  <script src="./js/adivina.js"></script>
+</body>
 
-    <div class="row mt-6 d-flex justify-content-center">
-      <div class="col-sm-4 col">
-        <div class="form-group">
-          <label for="resultado">Resultado:</label>
-          <input type="number" class="form-control" id="resultado" disabled>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mt-3">
-      <div class="col-sm-3 col">
-        <button type="button" class="btn btn-success btn-block" onclick="sumar()">Sumar</button>
-      </div>
-      <div class="col-sm-3 col">
-      <button type="button" class="btn btn-success btn-block" onclick="restar()">Restar</button>
-      </div>
-      <div class="col-sm-3 col">
-        <button type="button" class="btn btn-success btn-block" onclick="multiplicar()">Multiplicar</button>
-      </div>
-      <div class="col-sm-3 col">
-        <button type="button" class="btn btn-success btn-block" onclick="dividir()">Dividir</button>
-      </div>
-    </div>
-  </div>
-  <script src="./js/calculador.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<!-- SCRIPT DE BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 <footer class="fixed-bottom">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
